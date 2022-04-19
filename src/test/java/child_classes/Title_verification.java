@@ -12,7 +12,7 @@ public class Title_verification extends Home
         String titlename= wd.getTitle();
         Thread.sleep(3000);
         System.out.println("title name is = "+ titlename);
-        logger2.log(Status.PASS, "Title name is- "+ titlename);
+        logger1.log(Status.PASS, "Title name is- "+ titlename);
         Thread.sleep(3000);
         String expectedtitle=expected_title;
         Thread.sleep(3000);
@@ -20,13 +20,13 @@ public class Title_verification extends Home
         if(titlename.equals(expectedtitle))
         {
 
-            logger2.log(Status.PASS, "Title is verified of "+expected_title);
+            logger1.log(Status.PASS, "Title is verified of "+expected_title);
             //System.out.println("Website title verification Testcase is passed");
 
         }
         else
         {
-            logger2.log(Status.FAIL, "Title is not verified for "+expected_title);
+            logger1.log(Status.FAIL, "Title is not verified for "+expected_title);
             //	System.out.println("Website title verification is failed");
         }
     }

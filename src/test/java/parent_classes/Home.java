@@ -22,7 +22,7 @@ public class Home extends Base {
     public static ExtentSparkReporter htmlReporter = new ExtentSparkReporter("./Report/home.html");
     public static ExtentReports extent = new ExtentReports();
 
-    public static ExtentTest logger1,logger2;
+    public static ExtentTest logger1,logger2,logger3;
 
 
     @BeforeSuite
@@ -62,8 +62,8 @@ public class Home extends Base {
                 String temp= Utility.attachscreenshotreport(wd, result.getName());
 
 
-                logger2.fail("Testcase name"+ result.getName());
-                logger2.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+                logger3.fail("Testcase name"+ result.getName());
+                logger3.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 
             }}
         catch(Exception e)

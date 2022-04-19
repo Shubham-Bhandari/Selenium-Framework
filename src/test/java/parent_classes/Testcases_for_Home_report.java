@@ -8,7 +8,8 @@ public class Testcases_for_Home_report extends Home
         extent.attachReporter(htmlReporter);
 
 
-        logger1 = extent.createTest("Login Test");
-        logger2 = extent.createTest("Screenshot for failed testcase");
+        logger1 = extent.createTest("Title Verification");
+        logger2 = extent.createTest("Text Verification");
+        logger3 = extent.createTest("Screenshot for failed testcase");
     }
 }
